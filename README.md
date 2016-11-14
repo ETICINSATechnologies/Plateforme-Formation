@@ -10,6 +10,7 @@ L'équipe du pôle DSI de la Junior-Entreprise de l'INSA de Lyon est à l'initia
 
 ## Structure
 Le répertoire formationREST contient les sources de l'application Symfony développé en mode API.
+
 Le répertoire formationCLIENT contient les sources de l'application angular de présentation.
 
 Ces deux applications peuvent être déployées sur deux serveurs différents, en modifiant au besoin les configurations.
