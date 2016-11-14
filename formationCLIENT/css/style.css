@@ -1,0 +1,26 @@
+﻿header .headerLogo
+{
+    max-height: 34px;
+}
+
+#headerRow
+{
+    margin-bottom: 40px;
+}
+
+.header
+{
+    border-bottom: solid 1px;
+    position: fixed;
+    top: 0;
+    left : 0;
+    width: 100%;
+    max-height: 34px;
+}
+
+.menuSample
+{
+    background-color: rgb(180, 180, 180);
+    min-height: 600px;
+    margin-top: 20px;
+}
