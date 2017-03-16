@@ -22,9 +22,7 @@ class User extends BaseUser
      */
     protected $id;
 
-    /**
-     * @ORM\OneToOne(targetEntity="UsersBundle\Entity\User")
-     */
+
     private $user_data;
 
     /**
