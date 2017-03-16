@@ -1,0 +1,45 @@
+﻿<!doctype html>
+<html lang="fr" ng-app="etic-formation-app">
+<head>
+    <meta charset="utf-8">
+    <title>ETIC Plate-forme de formation</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="jTools/imports/angular.min.js"></script>
+    <script src="jTools/imports/angular-ui-router.min.js"></script>
+    <script src="jTools/eticToolbox/toolboxMainModule.js"></script>
+    <script src="jTools/eticToolbox/services/apiRelay.js"></script>
+
+    <script src="jApp/mainModule.js"></script>
+    <script src="jApp/services/auth.service.js"></script>
+    <script src="jApp/components/header/header.component.js"></script>
+    <script src="jApp/components/poster/poster.component.js"></script>
+    <script src="jApp/configs/routes.config.js"></script>
+    
+</head>
+<body ng-controller="pfMainController as mainCtrl">
+    <div class="container-fluid">
+
+        <div id="headerRow" class="row">
+            <!--Composant angular-->
+            <header></header>
+        </div>
+
+        <div id="contentRow" class="row">
+
+            <div class="col-md-2 menuSample">
+                <div>Menu lateral</div>
+                {{mainCtrl.auth.user.name}}
+            </div>
+
+            <div class="col-md-8">
+                <ui-view></ui-view>
+                <poster></poster>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>

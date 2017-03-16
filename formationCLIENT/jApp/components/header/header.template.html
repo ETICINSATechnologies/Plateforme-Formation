@@ -1,0 +1,23 @@
+<div class="col-md-12 header">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="row">
+                <img src="assets/etic/logo-etic1.png" class="headerLogo" />
+            </div>
+        </div>
+        <div class="col-md-6 col-md-offset-1">
+            <div class="row">
+                <div class="btn-group pull-right">
+                    <button type="button" class="btn">Bouton 1</button>
+                    <button type="button" class="btn">Bouton 2</button>
+                    <button type="button" class="btn">Bouton 3</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="row">
+                <div ng-bind="headerCtrl.user.name + ' ' + headerCtrl.user.firstName" ng-show="headerCtrl.user != null"></div>
+            </div>
+        </div>
+    </div>
+</div>

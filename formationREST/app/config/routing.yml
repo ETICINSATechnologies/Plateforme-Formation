@@ -1,0 +1,31 @@
+demo:
+    resource: "@demoBundle/Controller/"
+    prefix:   /api/demo
+    type:     rest
+
+# app/config/routing.yml
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /api/doc
+
+kernel:
+    resource: "@KernelBundle/Controller/"
+    prefix:   /api/kernel
+    type:     rest
+
+
+users:
+    resource: "@UsersBundle/Controller/"
+    prefix:   /api/users
+    type:     rest
+
+formations:
+    resource: "@FormationsBundle/Controller/"
+    prefix:   /api/formations
+    type:     rest
+
+fos_oauth_server_token:
+    resource: "@FOSOAuthServerBundle/Resources/config/routing/token.xml"
+
+fos_oauth_server_authorize:
+    resource: "@FOSOAuthServerBundle/Resources/config/routing/authorize.xml"
