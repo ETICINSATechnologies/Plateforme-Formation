@@ -1,3 +1,8 @@
+demo:
+    resource: "@demoBundle/Controller/"
+    prefix:   /api/demo
+    type:     rest
+
 # app/config/routing.yml
 NelmioApiDocBundle:
     resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
@@ -6,6 +11,12 @@ NelmioApiDocBundle:
 kernel:
     resource: "@KernelBundle/Controller/"
     prefix:   /api/kernel
+    type:     rest
+
+
+users:
+    resource: "@UsersBundle/Controller/"
+    prefix:   /api/users
     type:     rest
 
 formations:

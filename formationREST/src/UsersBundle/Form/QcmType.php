@@ -3,10 +3,12 @@
 namespace UsersBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\IntegerType;
+use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class UserType extends AbstractType
+class QcmType extends AbstractType
 {
     /**
      * @param FormBuilderInterface $builder
@@ -15,9 +17,7 @@ class UserType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('name')
-            ->add('firstName')
-            ->add('isAdmin')
+            ->add('name', TextType::class)
         ;
     }
     
@@ -27,7 +27,16 @@ class UserType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => 'UsersBundle\Entity\User'
+            'csrf_protection' => false,
+            'data_class' => 'UsersBundle\Entity\Qcm'
         ));
+    }
+
+    /**
+     * @return string
+     */
+    public function getName()
+    {
+        return "";
     }
 }

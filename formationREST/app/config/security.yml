@@ -32,7 +32,9 @@ security:
     access_control:
         - { path: ^/api, roles: [ IS_AUTHENTICATED_FULLY ] }
         - { path: ^/api/kernel, roles: [ ROLE_KERNEL_GUEST ] }
-        - { path: ^/api/formations, roles: [ ROLE_FORMATIONS_GUEST ] }
+        - { path: ^/api/formations, roles: [  ²ROLE_FORMATIONS_GUEST ] }
+        - { path: ^/api/demo, roles: [ ROLE_DEMO_GUEST ] }
+        - { path: ^/api/users, roles: [ ROLE_USERS_GUEST ] }
 
     role_hierarchy:
         # Global roles - to be updated when a new module (bundle) is added
@@ -53,3 +55,16 @@ security:
         ROLE_FORMATIONS_ADMIN: [ROLE_FORMATIONS_USER]
         ROLE_FORMATIONS_USER: [ROLE_FORMATIONS_GUEST]
         ROLE_FORMATIONS_GUEST: ~
+
+
+        # Demo Module
+        ROLE_DEMO_SUPERADMIN: [ROLE_DEMO_ADMIN]
+        ROLE_DEMO_ADMIN: [ROLE_DEMO_USER]
+        ROLE_DEMO_USER: [ROLE_DEMO_GUEST]
+        ROLE_DEMO_GUEST: ~
+
+        # Users Module
+        ROLE_USERS_SUPERADMIN: [ROLE_USERS_ADMIN]
+        ROLE_USERS_ADMIN: [ROLE_USERS_USER]
+        ROLE_USERS_USER: [ROLE_USERS_GUEST]
+        ROLE_USERS_GUEST: ~
