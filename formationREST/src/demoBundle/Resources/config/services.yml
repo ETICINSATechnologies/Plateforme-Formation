@@ -1,4 +1,4 @@
 services:
 #    demo.example:
-#        class: demoBundle\Example
+#        class: DemoBundle\Example
 #        arguments: ["@service_id", "plain_value", %parameter%]
