@@ -25,7 +25,6 @@ use UsersBundle\Form\QuestionType;
 class QuestionController  extends FOSRestController
 {
 
-
     /**
      * Create a new question
      * @var Request $request
@@ -57,7 +56,7 @@ class QuestionController  extends FOSRestController
     }
 
 
-    /**Get all the questions with the id of the qcm
+    /**Get all the questions
      * @return array
      * @View()
      * @ParamConverter("qcm", class="UserBundle:Qcm")
@@ -74,4 +73,52 @@ class QuestionController  extends FOSRestController
 
         return array('question' => $question);
     }
+
+    /**Get one question
+     * @param Question $question
+     * @return array
+     * @View()
+     * @ParamConverter("question", class="UserBundle:Question")
+     * @Get("/interrogation/{id}")
+     */
+    public function getInterrogationAction(Question $question)
+    {
+        return array('question' => $question);
+    }
+
+
+
+    /**
+     * Create a new proposal
+     * @var Request $request
+     * @return View|array
+     *
+     * @View()
+     * @Post("/addProposal")
+     */
+    public function postProposalsAction(Request $request)
+    {
+
+
+        $proposal = new Proposal();
+        $form = $this->createForm(new ProposalType(), $proposal);
+
+        $form->handleRequest($request);
+
+
+        if ($form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($proposal);
+            $em->flush();
+
+            return array("proposal" => $proposal);
+        }
+
+        return array(
+            'form' => $form,
+        );
+    }
+
+
+
 }
