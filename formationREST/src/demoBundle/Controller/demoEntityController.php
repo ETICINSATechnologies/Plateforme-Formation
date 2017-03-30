@@ -1,6 +1,12 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Jindun
+ * Date: 15/03/2017
+ * Time: 09:17
+ */
 
-namespace demoBundle\Controller;
+namespace DemoBundle\Controller;
 
 use FOS\RestBundle\Controller\Annotations\Get;
 use FOS\RestBundle\Controller\Annotations\Post;
@@ -15,12 +21,12 @@ use FormationsBundle\Entity\Course;
 use FormationsBundle\Form\CourseType;
 
 
-class demoEntityController extends FOSRestController
+class DemoEntityController extends FOSRestController
 {
     /**
-     * Get all the courses
+     * Get all the demo entities
      * @return array
-
+     *
      * @View()
      * @Get("/demo-entities")
      */
@@ -28,9 +34,12 @@ class demoEntityController extends FOSRestController
     {
         $em = $this->getDoctrine()->getManager();
 
-        $entities = $em->getRepository('demoBundle:demoEntity')->findAll();
+        $entities = $em->getRepository('DemoBundle:DemoEntity')->findAll();
 
         return array( 'demo-entities' => $entities );
     }
+
+
+
 
 }

@@ -1,5 +1,10 @@
+users:
+    resource: "@UsersBundle/Controller/"
+    prefix:  /api/users
+    type:     rest
+
 demo:
-    resource: "@demoBundle/Controller/"
+    resource: "@DemoBundle/Controller/"
     prefix:   /api/demo
     type:     rest
 
@@ -11,12 +16,6 @@ NelmioApiDocBundle:
 kernel:
     resource: "@KernelBundle/Controller/"
     prefix:   /api/kernel
-    type:     rest
-
-
-users:
-    resource: "@UsersBundle/Controller/"
-    prefix:   /api/users
     type:     rest
 
 formations:
