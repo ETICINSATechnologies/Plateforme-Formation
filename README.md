@@ -7,6 +7,9 @@ L'équipe du pôle DSI de la Junior-Entreprise de l'INSA de Lyon est à l'initia
 ## Contributeurs & Junior-Entreprises
 
  - Marc Fallouh (ETIC INSA Technologies)
+ - Sacha Barkat (ETIC INSA Technologies)
+ - Jindun Shao (ETIC INSA Technologies)
+ - Anis Hamroun (ETIC INSA Technologies)
 
 ## Structure
 Le répertoire formationREST contient les sources de l'application Symfony développé en mode API.
