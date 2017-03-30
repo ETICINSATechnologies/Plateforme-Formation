@@ -1,16 +1,17 @@
 <?php
 
-namespace DemoBundle\Entity;
+namespace demoBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
+
 /**
- * DemoEntity
+ * demoEntity
  *
  * @ORM\Table(name="demo_entity")
- * @ORM\Entity(repositoryClass="DemoBundle\Repository\DemoEntityRepository")
+ * @ORM\Entity(repositoryClass="demoBundle\Repository\demoEntityRepository")
  */
-class DemoEntity
+class demoEntity
 {
     /**
      * @var int
@@ -21,20 +22,6 @@ class DemoEntity
      */
     private $id;
 
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="nom", type="string", length=255)
-     */
-    private $nom;
-
-    /**
-     * @var string
-     *
-     * @ORM\Column(name="prenom", type="string", length=255)
-     */
-    private $prenom;
-
 
     /**
      * Get id
@@ -44,51 +31,5 @@ class DemoEntity
     public function getId()
     {
         return $this->id;
-    }
-
-    /**
-     * Set nom
-     *
-     * @param string $nom
-     * @return DemoEntity
-     */
-    public function setNom($nom)
-    {
-        $this->nom = $nom;
-
-        return $this;
-    }
-
-    /**
-     * Get nom
-     *
-     * @return string 
-     */
-    public function getNom()
-    {
-        return $this->nom;
-    }
-
-    /**
-     * Set prenom
-     *
-     * @param string $prenom
-     * @return DemoEntity
-     */
-    public function setPrenom($prenom)
-    {
-        $this->prenom = $prenom;
-
-        return $this;
-    }
-
-    /**
-     * Get prenom
-     *
-     * @return string 
-     */
-    public function getPrenom()
-    {
-        return $this->prenom;
     }
 }
