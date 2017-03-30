@@ -5,12 +5,12 @@
         'use strict';
 
         var generateUrl = function (endpoint, methodName, isConventionalRouting) {
-            var prefix = "/",
+            var prefix = "http://localhost:8000/",
                 suffix = "";
 
             // If conventional routing is used, we prefix the url with '/api/'
             if (isConventionalRouting)
-                prefix = "/api/";
+                prefix = "http://localhost:8000/api/";
 
 
             if ((methodName != undefined)
@@ -28,10 +28,14 @@
         var post = function (endpoint, data, methodName, isConventionalRouting) {
             var deferred = $q.defer();
             $http({
-                url: generateUrl(endpoint, methodName, isConventionalRouting),
+                url:  generateUrl(endpoint, methodName, isConventionalRouting),
                 method: "POST",
                 data: data,
-                headers: { 'Content-Type': 'application/json' }
+                headers:
+                    {
+                        'Content-Type': 'application/json',
+                        'Authorization': 'Bearer Mjg2NTJlOTU3NzYxZDQyN2U1MWEyZjJkNjljMTI5NWY2Mzg1MjBkNGUyMWFiMDJhM2EwNTM5YjQ4MjU2ZTBjNw'
+                    }
             }
             )
                 .success(function (data) { deferred.resolve(data); })
