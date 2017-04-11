@@ -1,0 +1,15 @@
+<div class="col-md-12">
+			<div ng-repeat="pole in listPolesCtrl.poles " >
+				<button class=" ui animated button " tabindex="0" style="width: 20vw;">
+					<center>
+						<div class="visible content">
+							<i class="{{pole.icon}} icon big green"></i><br></br>
+							<p class="big">{{pole.name}}</p>
+						</div>
+						<div class="hidden content">
+								{{pole.description}}
+						</div>
+				  	</center>
+				</button>
+			</div>
+</div>

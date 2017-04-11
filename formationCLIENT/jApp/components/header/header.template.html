@@ -3,21 +3,17 @@
         <div class="col-md-2">
             <div class="row">
                 <img src="assets/etic/logo-etic1.png" class="headerLogo" />
+                    <script src="jTools/imports/angular.min.js"></script>
+                    <script src="jTools/imports/angular-ui-router.min.js"></script>
+                    <script src="jTools/eticToolbox/toolboxMainModule.js"></script>
+                    <script src="jTools/eticToolbox/services/apiRelay.js"></script>
             </div>
         </div>
-        <div class="col-md-6 col-md-offset-1">
-            <div class="row">
-                <div class="btn-group pull-right">
-                    <button type="button" class="btn">Bouton 1</button>
-                    <button type="button" class="btn">Bouton 2</button>
-                    <button type="button" class="btn">Bouton 3</button>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="row">
-                <div ng-bind="headerCtrl.user.name + ' ' + headerCtrl.user.firstName" ng-show="headerCtrl.user != null"></div>
-            </div>
-        </div>
+     <div class="topnav" id="myTopnav">
+      <a href="#home">Home</a>
+      <a href="#formations">formations</a>
+      <a href="#profil">Profil</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
     </div>
 </div>

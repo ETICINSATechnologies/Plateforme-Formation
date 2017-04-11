@@ -14,6 +14,11 @@ app.config(["$stateProvider", "$urlRouterProvider",
                                     {   url: "/formations",
                                         templateUrl: "jApp/views/formations/formations.template.html"
                                     }
+                                )
+                        .state  (   'profil',
+                                    {   url: "/profil",
+                                        templateUrl: "jApp/views/profil/profil.template.html"
+                                    }
                                 );
     }
 ]);
