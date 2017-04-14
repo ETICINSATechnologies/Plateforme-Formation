@@ -8,7 +8,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" ui-sref="home"><img src="assets/etic/logo-etic1.png" width="30px" height="30px"/></a>
+                <a class="navbar-brand" ui-sref="home" onclick="$('.nav').find('.active').removeClass('active');"><img src="assets/etic/logo-etic1.png" width="30px" height="30px"/></a>
             </div>
 
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -19,9 +19,9 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile<span class="caret"></span></a>
+                        <a id = "profile" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profile<span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Mon profile</a></li>
+                            <li><a ui-sref="profil">Mon profile</a></li>
                             <li><a href="#">Badges</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="#">Se déconnecter</a></li>
@@ -38,3 +38,9 @@
         </div>
     </nav>
 </div>
+<script type="text/javascript">
+    $(".nav a").on("click", function(){
+        $(".nav").find(".active").removeClass("active");
+        $(this).parent().addClass("active");
+    });
+</script>

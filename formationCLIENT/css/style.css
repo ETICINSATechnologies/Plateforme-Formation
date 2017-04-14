@@ -4,6 +4,7 @@
 
 .pageContent{
     background-color: #4D4D4D;
+    color: #FFF;
 }
 
 .menuSample
@@ -13,3 +14,14 @@
     margin-top: 20px;
 }
 
+h1{
+    text-align: center;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 50px;
+}
+
+h2{
+    text-align: center;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 20px;
+}
