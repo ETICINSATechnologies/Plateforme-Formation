@@ -8,6 +8,7 @@
     <script src="jTools/imports/jquery-3.1.1.min.js"></script>
     <script src="css/semantic.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.min.js"></script>
     <script src="jTools/imports/angular.min.js"></script>
     <script src="jTools/imports/angular-ui-router.min.js"></script>
     <script src="jTools/eticToolbox/toolboxMainModule.js"></script>
@@ -28,12 +29,15 @@
             <header></header>
         </div>
         <div id="contentRow" class="row">
-            <div class="col-md-8">
-            <div class="view" style="  border: 1px solid black; padding:30px; ">
-                <ui-view>
-                    
-                </ui-view>
-            </div>
+            <div class="col-md-10 col-md-offset-1 pageContent">
+                <br/>
+                <br/>
+                <br/>
+                <div class="view">
+                    <ui-view>
+
+                    </ui-view>
+                </div>
             </div>
         </div>
     </div>

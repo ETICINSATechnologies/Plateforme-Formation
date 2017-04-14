@@ -5,8 +5,8 @@
 
         var that = this;
         that.user = {
-            name: "Durand",
-            firstName: "Paul",
+            name: "GALLY",
+            firstName: "Justin",
             isAdmin: true
         }
 
