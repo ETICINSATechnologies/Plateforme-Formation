@@ -7,6 +7,9 @@
         that.user = {
             name: "GALLY",
             firstName: "Justin",
+            image: "anonyme.png",
+            email : "justin.gally@insa-lyon.fr",
+            groupe : "DSI Groupe",
             isAdmin: true
         }
 

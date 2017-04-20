@@ -1,8 +1,8 @@
 (function (module) {
-    module.component('header',
+    module.component('userInformations',
         {
             restrict: 'E',
-            templateUrl: "jApp/components/header/header.template.html",
+            templateUrl: "jApp/components/userInformations/userInformations.template.html",
             controller: ['authService',
                 function (authService)
                 {
@@ -10,7 +10,7 @@
                     that.user = authService.user;
                 }
             ],
-            controllerAs: 'headerCtrl'
+            controllerAs: 'userInformationsCtrl'
         }
     );
 })(app);
