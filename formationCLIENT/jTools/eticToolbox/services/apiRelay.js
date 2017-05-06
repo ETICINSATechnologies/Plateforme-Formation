@@ -34,7 +34,7 @@
                 headers:
                     {
                         'Content-Type': 'application/json',
-                        'Authorization': 'Bearer Mjg2NTJlOTU3NzYxZDQyN2U1MWEyZjJkNjljMTI5NWY2Mzg1MjBkNGUyMWFiMDJhM2EwNTM5YjQ4MjU2ZTBjNw'
+                        'Authorization': 'Bearer NDEzZDA5MGQzZjMyZWFlZmI4NDZkZmQ3YWM4ZjE2NjAzOTEyNmUyMzY4NGJlMDdhZjg3Y2Y0ZWU4ZTU4NTU4OQ'
                     }
             }
             )
@@ -58,7 +58,10 @@
                 url: generateUrl(endpoint, methodName, isConventionalRouting),
                 params: params,
                 method: "GET",
-                headers: { 'Accept': 'application/json' }
+                headers: {
+                    'Accept': 'application/json',
+                    'Authorization': 'Bearer NDEzZDA5MGQzZjMyZWFlZmI4NDZkZmQ3YWM4ZjE2NjAzOTEyNmUyMzY4NGJlMDdhZjg3Y2Y0ZWU4ZTU4NTU4OQ'
+                }
             }
             )
                 .success(function (data) { deferred.resolve(data); })
