@@ -6,7 +6,7 @@
             controller: [
                 function ()
                 {
-                    this.formation=[
+                    this.formations=[
                         {
                               name: 'DSI',
                               description: "Système d'information"
@@ -15,7 +15,7 @@
                               name: 'Performance',
                               description: "Suivi et amélioration continue"
 
-                            }, 
+                            },
                             {
                               name: "Unité d'affaire",
                               description: "Vente et réalisation de missions"
@@ -34,11 +34,10 @@
                             {
                               name: "Trésorerie",
                               description: "Gestion des finances"
-
                             }];
                       }
             ],
-            controllerAs: 'ListeFormationsCtrl'
+            controllerAs: 'listeformationsCtrl'
         }
     );
 })(app);
