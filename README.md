@@ -1,30 +1,48 @@
 # Plateforme-Formation
-Projet de plate-forme de formation en ligne open source destiné aux Junior-Entreprises.
+An online open source formation platform (MOOC-like) for Junior-Enterprises.
+**Frontend** : Angular (Typescript/Javascript framework)
+**Backend** : Symfony (PHP framework) and MySQL
 
 ## ETIC INSA Technologies
-L'équipe du pôle DSI de la Junior-Entreprise de l'INSA de Lyon est à l'initiative de ce projet.
+This project is initiated by the Information System Direction team of INSA Lyon's Junior-Enterprise.
 
-## Contributeurs & Junior-Entreprises
+## Contributors & Junior-Entreprises
+**2017-18**
+- Jindun Shao (Project Manager) - ETIC INSA Technologies
+- Vincent Redouté (Head Frontend Dev) - ETIC INSA Technologies
+- Alexandre Simon (Frontend Dev) - ETIC INSA Technologies
+- Christophe Etienne (Frontend Dev) - ETIC INSA Technologies
+- Alexandre van Beurden (Head Backend Dev) - ETIC INSA Technologies
+- Youssef Oudghiri (Backend Dev) - ETIC INSA Technologies
 
- - Marc Fallouh (ETIC INSA Technologies)
- - Sacha Barkat (ETIC INSA Technologies)
- - Jindun Shao (ETIC INSA Technologies)
- - Anis Hamroun (ETIC INSA Technologies)
+**2016-17**
+
+Marc Fallouh, Sacha Barkat, Jindun Shao, Anis Hamroun, Justin Gally - ETIC INSA Technologies
 
 ## Structure
-Le répertoire formationREST contient les sources de l'application Symfony développé en mode API.
+The folder **formationCLIENT** contains the source code of the Angular application.
 
-Le répertoire formationCLIENT contient les sources de l'application angular de présentation.
+The folder **formationREST** contains the source code of the Symfony application (as a RESTful API).
 
-Ces deux applications peuvent être déployées sur deux serveurs différents, en modifiant au besoin les configurations.
+These two applications can be deployed into two different servers, just edit the config files if needed.
 
-## Mise en garde
+## Get started
 
-Ce dépôt est en évolution constante, la mise en production n'est pas encore envisageable à ce stade.
+### First step
+- Clone the project (or fork it if you want to contribute : [How to contribute (French)](https://github.com/ETICINSATechnologies/Formation/tree/master))
 
-## Installation 
+### Frontend
+- Install [Node.js](https://nodejs.org/en/download/) (with npm included) if not done.
+- Open a terminale in the folder **formationCLIENT**
+- Install all frontend packages with npm :
+```
+npm install
+```
+- Serve the application
+```
+ng serve --open
+```
+It will launch the server, watch your files, and rebuild the app as you make changes to those files.
 
-1. Cloner le repository dans le répertoire de votre serveur Apache (htdocs pour xampp)
-2. Installer Composer pour votre plate forme de développement: https://getcomposer.org/download/
-3. Ouvrir une console dans le répertoire formationREST et exécuter la commande `composer install`
-4. Configurer le serveur de données pour faire correspondre le nom de base et le login/password.
+### Backend
+WORK IN PROGRESS HIHI
