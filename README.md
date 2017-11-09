@@ -48,3 +48,6 @@ It will launch the server, watch your files, and rebuild the app as you make cha
 
 ### Backend
 WORK IN PROGRESS HIHI
+
+### To finish
+Please write all your code and comments in english !
