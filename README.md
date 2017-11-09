@@ -1,6 +1,8 @@
 # Plateforme-Formation
 An online open source formation platform (MOOC-like) for Junior-Enterprises.
+
 **Frontend** : Angular (Typescript/Javascript framework)
+
 **Backend** : Symfony (PHP framework) and MySQL
 
 ## ETIC INSA Technologies
