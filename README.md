@@ -31,18 +31,22 @@ These two applications can be deployed into two different servers, just edit the
 ## Get started
 
 ### First step
-- Clone the project (or fork it if you want to contribute : [How to contribute (French)](https://github.com/ETICINSATechnologies/Formation/tree/master))
+- Clone the project (or fork it if you want to contribute : [How to contribute](https://github.com/ETICINSATechnologies/Plateforme-Formation/blob/master/HowToContribute.md))
 
 ### Frontend
-- Install [Node.js](https://nodejs.org/en/download/) (with npm included) if not done.
+- Install [Node.js with npm](https://nodejs.org/en/download/) if not done.
+- Install *angular-cli* globally
+```
+$ npm install -g @angular/cli
+```
 - Open a terminale in the folder **formationCLIENT**
 - Install all frontend packages with npm :
 ```
-npm install
+$ npm install
 ```
 - Serve the application
 ```
-ng serve --open
+$ ng serve --open
 ```
 It will launch the server, watch your files, and rebuild the app as you make changes to those files.
 
