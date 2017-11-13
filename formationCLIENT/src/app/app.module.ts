@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 import {SuiModule} from 'ng2-semantic-ui';
 
 import { AppComponent } from './app.component';
+import { FormationComponent } from './formation/formation.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FormationComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
