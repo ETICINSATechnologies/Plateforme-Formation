@@ -19,7 +19,7 @@ import { HomeComponent } from './home/home.component';
     SuiModule,
     RouterModule.forRoot([
       {path: 'home', component: HomeComponent},
-      {path: 'foramtion', component: FormationComponent}
+      {path: 'formation', component: FormationComponent}
     ])
   ],
   providers: [],
