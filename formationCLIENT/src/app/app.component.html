@@ -5,14 +5,14 @@
 </head>
 <body>
 <div class="ui inverted menu navbar">
-  <a href="" class="item" >
+  <a routerLink="/home" class="item" >
     <div class="image">
       <img src="../assets/logo-etic.png" width="25px" height="25px" style="margin-left: -10px">
     </div>
-    <a routerLink="/home" style="margin-left: 10px">{{title}}</a>
+    {{title}}
   </a>
-  <a href="" class="item">
-    <a routerLink="/formations">Formations</a>
+  <a routerLink="/formations" class="item">
+    Formations
   </a>
 </div>
 <router-outlet></router-outlet>
