@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { Formation } from '../formation';
-import { FORMATIONS } from '../mock-formations';
+import { Formation } from './formation';
+import { FormationService } from './formation.service';
 
 @Component({
   selector: 'app-formations',
@@ -9,11 +9,15 @@ import { FORMATIONS } from '../mock-formations';
   encapsulation: ViewEncapsulation.None
 })
 export class FormationsComponent implements OnInit {
-  formations = FORMATIONS;
+  formations: Formation[];
 
-  constructor() { }
+  constructor(private formationService: FormationService ) { }
 
   ngOnInit() {
+    this.getFormations();
   }
 
+  getFormations(): void {
+    this.formations = this.formationService.getFormations();
+  }
 }

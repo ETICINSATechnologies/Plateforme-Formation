@@ -1,4 +1,4 @@
-import { Formation } from './formation';
+import { Formation } from '../formations/formation';
 
 export const FORMATIONS: Formation[] = [
   {id: 1, name: 'angular4', icon: '../assets/angular-logo.jpg'},
