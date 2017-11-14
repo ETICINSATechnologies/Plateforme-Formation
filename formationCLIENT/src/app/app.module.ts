@@ -8,7 +8,6 @@ import { FormationsComponent } from './formations/formations.component';
 import { HomeComponent } from './home/home.component';
 import {FormationService} from './formations/formation.service';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,7 +22,7 @@ import {FormationService} from './formations/formation.service';
       {path: 'formations', component: FormationsComponent}
     ])
   ],
-  providers: [ FormationService],
+  providers: [ FormationService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

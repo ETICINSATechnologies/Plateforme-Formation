@@ -14,10 +14,10 @@ export class FormationsComponent implements OnInit {
   constructor(private formationService: FormationService ) { }
 
   ngOnInit() {
-    this.getFormations();
+    this.getListFormations();
   }
 
-  getFormations(): void {
-    this.formations = this.formationService.getFormations();
+  getListFormations(): void {
+    this.formationService.getListFormations().subscribe(formations => this.formations = formations);
   }
 }

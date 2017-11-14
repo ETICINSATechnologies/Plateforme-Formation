@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs/Rx';
+import { of } from 'rxjs/observable/of';
 
 import { Formation } from './formation';
 import { FORMATIONS} from '../mock/mock-formations';
@@ -8,8 +10,8 @@ export class FormationService {
 
   constructor() { }
 
-  getFormations(): Formation[] {
-    return FORMATIONS;
+  getListFormations(): Observable<Formation[]> {
+    return of(FORMATIONS);
   }
 
 }
