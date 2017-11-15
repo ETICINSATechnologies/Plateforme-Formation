@@ -20,4 +20,18 @@ export class FormationsComponent implements OnInit {
   getListFormations(): void {
     this.formationService.getListFormations().subscribe(formations => this.formations = formations);
   }
+
+  add(name: string): void {
+    name = name.trim();
+    if (!name) { return; }
+    this.formationService.addFormation({ name } as Formation)
+      .subscribe(formation => {
+        this.formations.push(formation);
+      });
+  }
+
+  delete(formation: Formation): void {
+    this.formations = this.formations.filter(f => f !== formation);
+    this.formationService.deleteFormation(formation).subscribe();
+  }
 }
