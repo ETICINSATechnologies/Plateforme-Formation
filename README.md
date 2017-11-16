@@ -3,10 +3,10 @@ An online open source formation platform (MOOC-like) for Junior-Enterprises.
 
 **Frontend** : Angular (Typescript/Javascript framework)
 
-**Backend** : Symfony (PHP framework) and MySQL
+**Backend** : Symfony (PHP framework)
 
 ## ETIC INSA Technologies
-This project is initiated by the Information System Direction team of INSA Lyon's Junior-Enterprise.
+This project is initiated by the Computer and Information Systems team of INSA Lyon's Junior-Enterprise.
 
 ## Contributors & Junior-Entreprises
 **2017-18**
@@ -51,7 +51,7 @@ $ ng serve --open
 It will launch the server, watch your files, and rebuild the app as you make changes to those files.
 
 ### Backend
-WORK IN PROGRESS HIHI
+WORK IN PROGRESS
 
 ### To finish
 Please write all your code and comments in english !
