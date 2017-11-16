@@ -1,10 +1,23 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="background-image:url('/assets/Barkat.jpg'); color:white; height:800px">
-  <div style="text-align:center">
-    <br />
-    <h1>
-      {{title}}
-    </h1>
-    <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-  </div>
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<div class="ui inverted menu navbar">
+  <a href="" class="item" >
+    <div class="image">
+      <img src="../assets/logo-etic.png" width="25px" height="25px" style="margin-left: -10px">
+    </div>
+    <a routerLink="/home" style="margin-left: 10px">{{title}}</a>
+  </a>
+  <a href="" class="item">
+    <a routerLink="/formations">Formations</a>
+  </a>
 </div>
+  <router-outlet></router-outlet>
+</body>
+</html>
+
+
+
