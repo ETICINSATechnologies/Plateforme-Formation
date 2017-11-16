@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { Formation } from './formation';
-import { FormationService } from './formation.service';
+import { Formation } from '../../objects/formation';
+import { FormationService } from '../../services/formation.service';
 
 @Component({
   selector: 'app-formations',

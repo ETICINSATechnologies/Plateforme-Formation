@@ -7,9 +7,9 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryFormationDataService }  from './in_memory_data/InMemoryFormationDataService'
 
 import { AppComponent } from './app.component';
-import { FormationsComponent } from './formations/formations.component';
-import { HomeComponent } from './home/home.component';
-import {FormationService} from './formations/formation.service';
+import { FormationsComponent } from './components/formations/formations.component';
+import { HomeComponent } from './components/home/home.component';
+import {FormationService} from './services/formation.service';
 
 @NgModule({
   declarations: [

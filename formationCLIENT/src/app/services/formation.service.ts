@@ -4,7 +4,7 @@ import { HttpClient, HttpHeaders} from '@angular/common/http';
 import { catchError, map, tap } from 'rxjs/operators';
 import {of} from "rxjs/observable/of";
 
-import { Formation } from './formation';
+import { Formation } from '../objects/formation';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
