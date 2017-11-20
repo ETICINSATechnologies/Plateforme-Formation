@@ -24,7 +24,7 @@ export class FormationsComponent implements OnInit {
   add(name: string): void {
     name = name.trim();
     if (!name) { return; }
-    this.formationService.addFormation({ name } as Formation)
+    this.formationService.addFormation({ id: null, name: name, icon: '../assets/angular-logo.jpg' } as Formation)
       .subscribe(formation => {
         this.formations.push(formation);
       });
