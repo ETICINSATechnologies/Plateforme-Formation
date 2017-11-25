@@ -10,12 +10,14 @@ import { AppComponent } from './app.component';
 import { FormationsComponent } from './components/formations/formations.component';
 import { HomeComponent } from './components/home/home.component';
 import {FormationService} from './services/formation.service';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormationsComponent,
-    HomeComponent
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
